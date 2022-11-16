@@ -8,7 +8,20 @@ import { HomeComponent } from './home/home.component';
 })
 export class AppComponent {
   title = 'webapp';
-  // constructor(private router:Router){}
-  // ngOnInit(){this.router.navigate(['/new-report'])
-// }
+  constructor(private router: Router) { }
+  public show:boolean = true;
+  public buttonName:any = 'X';
+
+  ngOnInit () {  }
+
+  toggle() {
+    this.show = !this.show;
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show)  
+      this.buttonName = "X";
+    else
+      this.buttonName = "▼";
+  }
 }
+

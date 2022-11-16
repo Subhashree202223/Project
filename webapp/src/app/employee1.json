@@ -1,0 +1,37 @@
+[  
+  {  
+    "id": 2401,  
+    "name": "Aadithya Chathuri",  
+    "email": "aadhi.thya@gmail.com",  
+    "gender": "Male",
+    "department": "Design"
+  },  
+    {  
+    "id": 2602,  
+    "name": "Bala Subramanian",  
+    "email": "bala32@gmail.com",  
+    "gender": "Male",
+    "department": "AI"
+  },  
+    {  
+    "id": 2403,  
+    "name": "Dhanur Ram",  
+    "email": "dhan6@gmail.com",  
+    "gender": "Male",
+    "department": "Design"
+  },  
+    {  
+    "id": 2604,  
+    "name": "Hitari Mina",  
+    "email": "hitari@gmail.com",  
+    "gender": "Female",
+    "department": "AI"
+  },  
+    {  
+    "id": 2505,  
+    "name": "Viruksha Tanur",  
+    "email": "viru34551@gmail.com",  
+    "gender": "Female",
+    "department": "Design"
+  }
+  ]
