@@ -1,0 +1,23 @@
+<div class="content">
+  <div class="sidenav">
+
+    <h3><strong>Charts</strong></h3>
+    <button type="button" name="button" onclick="loadbargraph()">Bar Chart</button>
+    <div id="bardiv">
+      <div id="bardivmovable">Click here to move</div>
+      <app-bar-chart></app-bar-chart>
+    </div>
+
+  </div>
+<!-- <button id="chart" (click)="loadbargraph">Bar Graph</button> -->
+
+  <canvas id="canvas" class="dotted-box" width="800px" height="720px">
+  <!-- <div align="center">
+
+
+  </div> -->
+  </canvas>
+</div>
+<div class="saveas">
+  <button (click)="saveas()" id="saveas">Save</button>
+</div>

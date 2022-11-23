@@ -1,0 +1,58 @@
+<div class="content">
+  <div class="sidenav">
+
+    <h3><strong>Charts</strong></h3>
+    <div class="btns">
+    <button class="button">Bar Chart</button>
+    <button class="button">Pie Chart</button>
+    <button class="button">Line Chart</button>
+    <button class="button">Bubble Chart</button>
+    <button class="button">Polar Chart</button>
+    <button class="button">Doughnut Chart</button>
+
+    <button class="button">Summary Table</button>
+    <button class="button">Financial Chart</button>
+
+
+    <!-- <div id="bardiv">
+      <div id="bardivmovable">Click here to move</div>
+
+    </div> -->
+    </div>
+    <button class="add" onclick="/chart">+ Add New Chart</button>
+  </div>
+<!-- <button id="chart" (click)="loadbargraph">Bar Graph</button> -->
+
+  <div class="dotted-box" width="800px" height="720px">
+
+  <div id="myDIV">
+  	<div class="item1"><div class="title"><strong>Year-wise Projects in Guwahati and Chennai Unit</strong></div><app-bar></app-bar></div>
+  	<div class="item2"><div class="title"><strong>Logistics Need in all Units</strong></div><app-pie></app-pie></div>
+  	<div class="item3"><div class="title"><strong>Month-wise growth in Guwahati Unit</strong></div><app-line></app-line></div>
+  </div>
+
+    <div class="item"><div class="title"><strong>Unit-wise Top Management data Table</strong></div>
+    <table id="users">
+    <tr>
+      <th *ngFor = "let column of header">
+       <div align="center">{{column}}</div>
+      </th>
+    </tr>
+
+    <tr *ngFor = "let row of rows">
+
+      <td *ngFor = "let column of header">
+       {{row[column]}}
+      </td>
+    </tr>
+
+  </table></div>
+
+
+
+
+  </div>
+</div>
+<div class="saveas">
+  <button (click)="saveas()" id="saveas">Save</button>
+</div>

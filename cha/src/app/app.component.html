@@ -1,0 +1,38 @@
+<ng-container *ngIf="show">
+  <div class="toolbar" role="banner">
+    <a href="https://www.cloobot.ai/">
+      <img title="Website"
+        width="40"
+        alt="Logo"
+        src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/qfynwx4xjeggfuboojux"
+      />
+    </a>
+    <span>Report Generation</span>
+    <br>
+    <a href="/report">Reports</a>
+    <a href="/chart">Charts</a>
+    <a href="/tables">Tables</a>
+    <a href="/home" style="float:right">Home</a>
+
+    <br>
+    <div class="spacer"></div>
+
+      <a href="https://in.linkedin.com/company/cloobot-techlabs">
+      <img id="linkedin-logo"
+
+        alt="Linkedin"
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/LinkedIn_icon_circle.svg/2048px-LinkedIn_icon_circle.svg.png"
+      />
+    </a>
+
+  </div>
+</ng-container>
+<br>
+<div align="right">
+  <button title="Hide Menu Bar" class="button" (click)="toggle()" id="bt">
+    {{buttonName}}
+  </button>
+</div>
+
+
+<router-outlet></router-outlet>

@@ -1,0 +1,85 @@
+<h1>Tables</h1>
+
+<div class="grid-container">
+  <div class="item1"><div class="title"><strong>Upcoming Task Table</strong></div>
+  <table id="users">
+  <tr>
+    <th *ngFor = "let column of header4">
+     <div align="center">{{column}}</div> 
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of row4">
+    
+    <td *ngFor = "let column of header4">
+     {{row[column]}}
+    </td>
+  </tr>
+  
+</table></div>
+  <div class="item2"><div class="title"><strong>Employee Basic Information Table</strong></div>
+  <table id="users">
+  <tr>
+    <th *ngFor = "let column of headers">
+     <div align="center">{{column}}</div> 
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of rows">
+  	
+    <td *ngFor = "let column of headers">
+     {{row[column]}}
+    </td>
+  </tr>
+  
+</table></div>
+  <div class="item3"><div class="title"><strong>Customer Approach Table</strong></div>
+  <table id="users">
+  <tr>
+    <th *ngFor = "let column of header3">
+     <div align="center">{{column}}</div> 
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of row3">
+    
+    <td *ngFor = "let column of header3">
+     {{row[column]}}
+    </td>
+  </tr>
+  
+</table></div>  
+  <div class="item4"><div class="title"><strong>Client Table</strong></div>
+  <table id="users">
+  <tr>
+    <th *ngFor = "let column of header2">
+     <div align="center">{{column}}</div> 
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of row2">
+    
+    <td *ngFor = "let column of header2">
+     {{row[column]}}
+    </td>
+  </tr>
+  
+</table></div>
+
+  <div class="item5"><div class="title"><strong>Task Status Table</strong></div>
+  <table id="users">
+  <tr>
+    <th *ngFor = "let column of header1">
+     <div align="center">{{column}}</div> 
+    </th>
+  </tr>
+
+  <tr *ngFor = "let row of row1">
+  	
+    <td *ngFor = "let column of header1">
+     {{row[column]}}
+    </td>
+  </tr>
+  
+</table>
+</div>

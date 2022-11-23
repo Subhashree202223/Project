@@ -1,0 +1,47 @@
+.content{
+    margin: 20px 0;
+  padding: 10px;
+/*  background: blue;*/
+  display: flex;
+}
+.dotted-box{
+  border: 1px dashed grey;
+ float: left;
+
+  margin: 20px;
+  margin-left: 100px;
+  padding: 10px;
+  height: 300px;
+  width: 500px;
+}
+.parent {
+  margin-left: 15px;
+  border: 1px solid black;
+  height: 1100px;
+  width: 1400px;
+  background-color: #edf5ff;
+}
+.dotted-box2 {
+  border: 1px dashed grey;
+ float: right;
+
+  margin: 20px;
+  margin-right: 100px;
+  padding: 10px;
+  height: 300px;
+  width: 500px;
+
+}
+
+button {
+
+  background-color: white;
+  color: black;
+  border: 2px solid #233c97;
+
+}
+
+.view button:hover {
+  background-color: #233c97;
+  color: white;
+}

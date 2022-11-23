@@ -1,0 +1,102 @@
+.sidenav {
+  height: 105%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 60px;
+  left: 0;
+  background: linear-gradient(to bottom, rgba(21,21,66,1) 0%, rgba(24,75,159,1) 53%, rgba(22,64,145,1) 100%);;
+  overflow-x: hidden;
+  padding-top: 30px;
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+    display: block;
+    text-align: center;
+}
+
+.content{
+    margin: 20px 0;
+  padding: 10px;
+/*  background: blue;*/
+  display: flex;
+}
+.content .sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  display: block;
+}
+
+.content .sidenav a:hover {
+  color: #f1f1f1;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.saveas #saveas{
+
+  background-color: white;
+  color: black;
+  border: 2px solid #233c97;
+  border-radius: 6px;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 2px 4px 5px 0px rgba(107,100,232,0.51);
+  float: right;
+  margin-top: -20px;
+  margin-right: 10px;
+  position: relative;
+}
+.sidenav #chart{
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  background-color: #b9d0f0;
+  color: black;
+}
+.saveas:hover #saveas{
+  background-color: #233c97;
+  box-shadow: 0px 15px 20px rgba(107,100,232,0.51);
+  color: white;
+}
+
+.content .dotted-box{
+  border: 1px dashed grey;
+/*  float: right;*/
+   flex: 1;
+  margin-left: 160px;
+  padding: 10px;
+  height: 600px;
+ /* width: 1200px;*/
+}
+
+#bardiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#bardivmovable {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}

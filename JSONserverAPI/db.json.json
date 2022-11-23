@@ -1,0 +1,34 @@
+{
+    "Users"= [
+{
+    "ID":"1",
+    "Name":"Anuraag",
+    "Department":"Design",
+    "Role":"Manager"
+  },
+  {
+    "ID":"2",
+    "Name":"Bala",
+    "Department":"Management",
+    "Role":"CMO"
+  },
+  {
+    "ID":"3",
+    "Name":"Eliza",
+    "Department":"Marketing",
+    "Role":"Manager"
+  },
+  {
+    "ID":"4",
+    "Name":"Himawari",
+    "Department":"Technology",
+    "Role":"CTO"
+  },
+  {
+    "ID":"5",
+    "Name":"Lily",
+    "Department":"HR",
+    "Role":"CEO"
+  }
+]
+}

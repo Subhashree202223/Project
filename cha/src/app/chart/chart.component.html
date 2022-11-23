@@ -1,0 +1,48 @@
+<div class="view" align="left">
+  <button style="border-radius:6px;"(click)="chartshow()">View Charts</button>
+</div>
+<br>
+<div class="parent">
+
+  <div class="dotted-box">
+
+  <button>Bar Chart</button>
+  <div [hidden] ="isShow"><app-bar></app-bar></div>
+
+  </div>
+
+  <div class="dotted-box2">
+
+  <button>Pie Chart</button>
+  <div [hidden] ="isShow"><app-pie></app-pie></div>
+
+  </div>
+
+  <div class="dotted-box">
+
+  <button >Line Chart</button>
+  <div [hidden] ="isShow"><app-line></app-line></div>
+
+  </div>
+
+  <div class="dotted-box2">
+
+  <button>Bubble Chart</button>
+  <div [hidden] ="isShow"><app-bubble></app-bubble></div>
+
+  </div>
+
+  <div class="dotted-box">
+
+  <button>Polar Chart</button>
+  <div [hidden] ="isShow"><app-polar></app-polar></div>
+
+  </div>
+
+  <div class="dotted-box2">
+
+  <button>Doughnut Chart</button>
+  <div [hidden] ="isShow"><app-doughnut></app-doughnut></div>
+
+  </div>
+</div>
