@@ -4,14 +4,16 @@ import { Component, ElementRef, ViewChild,OnInit } from '@angular/core';
 // declare var require: any;
 // const htmlToPdfmake = require("html-to-pdfmake");
 // (<any>pdfMake).vfs = pdffonts.pdfMake.vfs;
-
+import jsPDF from "jspdf";
+import "jspdf-autotable";
+import html2canvas from 'html2canvas';
 @Component({
   selector: 'app-new-report',
   templateUrl: './new-report.component.html',
   styleUrls: ['./new-report.component.css']
 })
 export class NewReportComponent implements OnInit {
-
+  @ViewChild('content',{static:false}) el!: ElementRef
   constructor() { }
   // public sidebarShow: boolean = true;
   // public bName:any = 'X';
@@ -68,14 +70,30 @@ export class NewReportComponent implements OnInit {
     // @ViewChild('pdfTable')
     // pdfTable!: ElementRef;
 
-    saveas() {
-      alert("Downloading this report as PDF");}
-    loadbargraph(){
-      alert("Yes");
+
+      saveas(){
+        let data = document.getElementById("content")
+        this.generatePDF(data);
+      }
+
+      generatePDF(data) {
+        // let pdf = new jsPDF()
+        let pdf = new jsPDF('l','mm',[900, 1300]);
+        pdf.html(this.el.nativeElement, {callback:(pdf) => {
+          pdf.save("sampleReport.pdf");}})
+        // html2canvas(data).then(canvas => {
+        //   let imgWidth = 1000;
+        //   let imgHeight = (canvas.height * imgWidth/canvas.width)
+          // const contentDataURL = canvas.toDataURL('image/png')
+
+          // var position = 10;
+          // pdf.addImage(contentDataURL.'PNG',0,position,imgWidth,imgHeight);
+          // pdf.save('Report.pdf');
+
+        // })
+      }
     }
     // const pdfTable = this.pdfTable.nativeElement;
     // var html = htmlToPdfmake(pdfTable.innerHTML);
     // const documentDefinition = { content: html };
     // pdfMake.createPdf(documentDefinition).download();
-
-    }
